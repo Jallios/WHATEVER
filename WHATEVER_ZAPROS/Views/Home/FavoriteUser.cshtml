@@ -1,0 +1,26 @@
+﻿@model IEnumerable<WHATEVER_ZAPROS.Models.Favorite>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@{ Layout = "_Layout"; ViewBag.Title = "Избранное";}
+
+<h2>Избранное</h2> 
+<thead>
+<table class="table table-hover text-center"> 	
+	<tbody>
+		@foreach (var r in Model)
+		{
+		<tr>
+			<td>@r.article.Header</td>
+			<td>@r.article.DateTimeArticle</td>
+			<td>@r.article.language.LanguageProgramming1</td>
+			<td>@r.article.user.LoginUser</td>
+			<td><a class="btn btn-outline-dark" asp-action="MoreArticle" asp-route-id="@r.ArticleId">Подробнее</a></td>
+			<td>
+				<form asp-action="DeleteFavorites" method="post">
+                    <input type="hidden" value="@r.article.IdArticle" name="idArticles" />
+                    <button type="submit"class="btn btn-outline-danger">Удалить</button>
+                </form>
+			</td>
+		</tr>
+		}
+	</tbody>
+</thead>

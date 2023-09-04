@@ -1,0 +1,31 @@
+﻿@model IEnumerable<WHATEVER_ZAPROS.Models.LanguageProgramming>
+@{
+	Layout = "_Layout"; ViewBag.Title = "Добавление стаьи";
+}
+
+<form asp-action="AddArticle" method="post">
+	<div class="input-group" style="padding:5px;">
+		<span class="input-group-text" for="Header">Заголовок:</span>
+		<input class="form-control" name="header" maxlength="25" required />
+	</div>
+	<div class="input-group" style="padding:5px;">
+		<span class="input-group-text" for="Text">Текст:</span>
+		<textarea class="form-control" aria-label="With textarea" name="text" required ></textarea>
+	</div>
+	<div class="input-group" style="padding:5px;">
+		<span class="input-group-text" for="LanguageProggramming">Язык программирования:</span>
+		<select name="languageID" class="form-select">
+			@if (Model != null)
+			{
+				@foreach (var r in Model)
+				{
+					<option value="@r.IdLanguageProgramming">@r.LanguageProgramming1</option>
+				}
+			}
+		</select>
+	</div>
+	<div style="padding:5px;">
+		<button type="submit" class="btn btn-sm btn-primary">Опубликовать</button>
+	</div>
+</form>
+

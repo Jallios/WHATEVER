@@ -1,0 +1,24 @@
+﻿@model WHATEVER_ZAPROS.Models.User
+@{
+	Layout = "_LayoutSign"; ViewBag.Title = "Авторизация";
+}
+<form asp-action="SignIn" method="post">
+	<div class="position-absolute top-50 start-50 translate-middle text-center">
+		<div class="form-group"  style="padding:5px;">
+		<input class="form-control" name="loginUser" placeholder="Логин:"  minlength="8" maxlength="25" required />
+		</div>
+		<div class="form-group"  style="padding:5px;">
+			<input class="form-control" name="passwordUser" type="password" placeholder="Пароль:" maxlength="25" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,25}$"/>
+		</div>
+		<div class="form-group"  style="padding:5px;">
+			<a asp-action="SignUp" class="btn btn-sm btn-secondary">Нет аккаунта?</a>
+		</div>
+		<div class="form-group"  style="padding:5px;">
+			<a asp-action="RestoreUser" class="btn btn-sm btn-secondary">Восстановить аккаунт</a>
+		</div>
+		<div  style="padding:5px;">
+			<button type="submit" class="btn btn-sm btn-primary">Войти</button>
+		</div>
+	</div>
+</form>
+

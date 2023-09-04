@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WHATEVER_ZAPROS.Models.Article>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@{ Layout = "_LayoutAdmin"; ViewBag.Title = "Мои статьи";}
+
+<h2>Мои статьи</h2> 
+ <a class="btn btn-secondary" asp-action="AddArticle">Добавить статью</a>
+<thead>
+	<table class="table table-hover text-center">	
+		<tbody>
+			@foreach (var r in Model)
+			{
+			<tr>
+				<td>@r.Header</td>
+				<td>@r.DateTimeArticle</td>
+				<td>@r.language.LanguageProgramming1</td>
+				<td>@r.user.LoginUser</td>
+				<td><a class="btn btn-outline-dark" asp-action="UpdateArticle" asp-route-id="@r.IdArticle">Подробнее</a></td>
+			</tr>
+			}
+		</tbody>
+	</table>
+</thead>

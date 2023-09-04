@@ -1,0 +1,18 @@
+﻿@model WHATEVER_ZAPROS.Models.User
+@{
+	Layout = "_LayoutSign"; ViewBag.Title = "Восстрановление аккаунта";
+}
+
+<form asp-action="RestoreUser" method="post">
+	<div class="position-absolute top-50 start-50 translate-middle text-center">
+		<div class="form-group"  style="padding:5px;">
+		<input class="form-control" name="login" placeholder="Логин:" required />
+		</div>
+		<div  style="padding:5px;">
+			<button type="submit" class="btn btn-sm btn-primary">Отправить код</button>
+		</div>
+	</div>
+</form>
+
+
+

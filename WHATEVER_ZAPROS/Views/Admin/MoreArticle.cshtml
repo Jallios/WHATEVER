@@ -1,0 +1,35 @@
+﻿@model WHATEVER_ZAPROS.Models.Article
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@{ Layout = "_LayoutAdmin"; ViewBag.Title = "Cтатья";}
+
+<h2>Запись</h2> 
+<form method="post">
+	<div class="input-group">
+		<span class="input-group-text" asp-for="IdArticle">Номер статьи</span>
+		<input class="form-control" asp-for="IdArticle" readonly/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="Header">Заголовок</span>
+		<input class="form-control" asp-for="Header" readonly/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="Text">Текст</span>
+		<textarea class="form-control" asp-for="Text" readonly></textarea>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="user.LoginUser">Автор</span>
+		<input class="form-control" asp-for="user.LoginUser" readonly/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="language.LanguageProgramming1">Язык программирования</span>
+		<input class="form-control" asp-for="language.LanguageProgramming1" readonly/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="DateTimeArticle">Дата и время</span>
+		<input class="form-control" asp-for="DateTimeArticle" readonly/>
+	</div>
+	<div>
+	<button asp-action="AddFavorite" type="submit" class="btn btn-sm btn-primary">В избранное</button>
+	</div>
+</form>
+

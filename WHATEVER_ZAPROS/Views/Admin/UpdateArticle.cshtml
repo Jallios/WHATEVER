@@ -1,0 +1,37 @@
+﻿@model WHATEVER_ZAPROS.Models.ViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@{ Layout = "_LayoutAdmin"; ViewBag.Title = "Cтатья"; }
+
+<h2>Запись</h2> 
+<form method="post">
+	<div class="input-group">
+		<span class="input-group-text" asp-for="IdArticle">Номер статьи</span>
+		<input class="form-control" asp-for="IdArticle" readonly/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="Header">Заголовок</span>
+		<input class="form-control" asp-for="Header" />
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="Text">Текст</span>
+		<input class="form-control" asp-for="Text" />
+	</div>
+	<div class="input-group">
+		<span class="input-group-text" asp-for="LanguageProgrammingId">Язык программирования</span>
+		<select asp-for="LanguageProgrammingId" class="form-select">
+			@if (Model != null)
+			{
+				@foreach (var r in Model.language)
+				{
+					<option value="@r.IdLanguageProgramming">@r.LanguageProgramming1</option>
+				}
+			}
+		</select>
+	</div>
+	<div>
+	<button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
+	</div>
+	<div>
+	<button asp-action="DeleteArticle" type="submit" class="btn btn-sm btn-primary">Удалить</button>
+	</div>
+</form>

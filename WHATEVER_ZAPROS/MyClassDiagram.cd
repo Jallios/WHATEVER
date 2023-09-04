@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WHATEVER_ZAPROS.Controllers.AdminController">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEQAAAAAAAAAAJAAAAAAACAAAAAAQAhAAEQIIACAAI=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Controllers.HomeController">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAJCAAAAACQBAAJABAAJAIAAAASCBAAEAIIAgAQA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.Article">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAAAAAAAAgAIAAAAAgAAAAAAAAAAAAADCABAQA=</HashCode>
+      <FileName>Models\Article.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.ErrorViewModel">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.Favorite">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAABAAgAAAACAAAQA=</HashCode>
+      <FileName>Models\Favorite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.HistoryArticle">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAIAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAEAAABQ=</HashCode>
+      <FileName>Models\HistoryArticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.HistoryUser">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Models\HistoryUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.LanguageProgramming">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\LanguageProgramming.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.Role">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.StatusArticle">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StatusArticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.StatusUser">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StatusUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.User">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAIACCAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WHATEVER_ZAPROS.Models.ViewModel">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAEIAAAAAAIAgAIAAAAAgAAAAAAAAAAAAADCAAAAA=</HashCode>
+      <FileName>Models\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

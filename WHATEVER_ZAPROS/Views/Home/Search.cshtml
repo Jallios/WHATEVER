@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WHATEVER_ZAPROS.Models.Article>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+@{ Layout = "_Layout"; ViewBag.Title = "Поиск";}
+
+<h2>Поиск</h2>
+
+<form asp-action="Search" asp-controller="Home">
+	<div class="input-group">
+	  <input type="text" class="form-control" name="header">
+	  <button type="submit" class="btn btn-outline-secondary">Поиск...</button>
+	</div>
+</form>
+
+<thead>
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					@if (Model != null)
+					{
+						@foreach (var r in Model.GroupBy(x => x.LanguageProgrammingId).Select(y => y.First()))
+						{
+							<a class="btn btn-sm btn-secondary" asp-action="Articlelanguage" asp-route-id="@r.language.IdLanguageProgramming">@r.language.LanguageProgramming1</a>
+						}
+					}
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</thead>
+
+
+                   
+<thead>
+	<table class="table table-hover text-center">	
+		<tbody>
+			@if (Model != null)
+			{
+				@foreach(var r in Model){
+				<tr>
+					<td>@r.Header</td>
+					<td>@r.DateTimeArticle</td>
+					<td>@r.language.LanguageProgramming1</td>
+					<td>@r.user.LoginUser</td>
+					<td><a class="btn btn-outline-dark" asp-action="MoreArticle" asp-route-id="@r.IdArticle">Подробнее</a></td>
+				</tr>
+				}
+			}
+		</tbody>
+	</table>
+</thead>
